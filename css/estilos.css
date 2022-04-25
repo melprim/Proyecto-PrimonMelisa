@@ -160,6 +160,7 @@ ul {
 .caracteristicas h3{
     color: #8B857E;
     padding-top: 2rem;
+    text-align: center;
 }
 
 .caracteristicas p{
@@ -529,7 +530,7 @@ ul {
 
 /* INICIO MEDIA QUERIES */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 825px) {
     .whatsapp{
         display: none;
     }
