@@ -529,7 +529,7 @@ ul {
 
 /* INICIO MEDIA QUERIES */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .whatsapp{
         display: none;
     }
@@ -703,6 +703,7 @@ ul {
     }
     .slogan a{
         margin: 3rem 0;
+        text-align: center;
     }
     .introduccion{
         grid-template-columns: repeat(1, 1fr);
