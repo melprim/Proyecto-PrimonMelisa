@@ -719,7 +719,7 @@ ul {
         font-size: 25px;
     }
     .caracteristicas h3{
-        padding-top: 1rem;
+        padding: 1rem 0.5rem 0 0.5rem;
         text-align: center;
     }
     .caracteristicas p{
