@@ -578,9 +578,6 @@ ul {
     }
 
      /* HOME */
-    .slogan{
-        margin: 6rem 0;
-    }
     .main h1{
         font-size: 35px;
     }
@@ -699,7 +696,7 @@ ul {
         text-align: center;
     }
     .slogan{
-        margin: 3rem 0;
+        padding: 3rem 0;
     }
     .slogan p{
         width: 85%;
@@ -797,17 +794,6 @@ ul {
     .texto p{
         text-align: justify;
     }
-
-   
-
-  
-
-   
-
-
-
-
-
 }
 
 /* TRANSFIRMACION-TRANSICIONES-ANIMACIONES */
@@ -874,7 +860,6 @@ ul {
     100% {
         letter-spacing: normal;
         opacity: 1;
-    
     }
 }
 
@@ -910,7 +895,7 @@ ul {
 }
 
 .transform-5 {
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 }
 .transform-5:hover {
     cursor: pointer;
