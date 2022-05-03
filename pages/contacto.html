@@ -25,81 +25,102 @@
     <!-- css -->
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body class="pagina">
-    <a target="_blank" href="https://api.whatsapp.com/send?phone=+5493424239498" class="whatsapp fab fa-whatsapp-square"></a>    
-    <header class="header">
-        <img src="../imagenes/LOGO.png" alt="logo cerco santa fe">
-        <a href="#barra">
-            <i class="fas fa-bars"></i>
-        </a> 
-        <nav id="barra">
-            <ul>
-                <li><a class="transform-5" href="../index.html">Home</a></li>
-                <li><a class="transform-5" href="Producto.html">Nuestro Producto</a></li>
-                <li><a class="transform-5" href="trabajos-realizados.html">Trabajos Realizados</a></li>
-                <li><a class="transform-5" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                <li><a class="transform-5" href="contacto.html">Contacto</a></li>
-                <li><a class="transform-5" class="cruz" href="#">X</a></li>
-            </ul>
-        </nav>
-    </header>
+<body>
+    <div class="container-fluid px-0">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=+5493424239498" class="whatsapp fab fa-whatsapp-square"></a>
+        
+    <!-- aplicando bootsatrap a header --> 
+        <header>
+            <div class="shadow bg-body rounded">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white py-0 align-items-end px-3">
+                    <a class="navbar-brand py-0 my-3 me-0" href="#"><img src="../imagenes/LOGO.png" class="img-fluid" width="180px"></a>
+                    <button class="navbar-toggler my-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon"></span></button>
 
-    <main class="main">
-        <div class="titulo">
-            <h1>CONTÁCTANOS</h1>
-        </div>
-        <section class="contactoContenido">
-            <form class=animacion-1>
-                <h2>Envíanos tu consulta</h2>
-                <div>
-                    <label for="Nombre">Nombre</label>
-                    <input required type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre..">
-                </div>
-                <div>
-                    <label for="e-mail">Correo Electrónico</label>
-                    <input required type="text" id="e-mail" name="e-mail" placeholder="Ingrese su e-mail..">
-                </div>
-                <div>
-                    <label for="localidad">Localidad</label>
-                    <input required type="text" id="e-localidad" name="localidad" placeholder="Ingrese su localidad..">
-                </div>
-                <div>
-                    <label for="Asunto">Asunto</label>
-                    <input required type="text" id="asunto" name="asunto" placeholder="Ingrese su e-mail..">
-                </div>
-                <div>
-                    <label for="comentario">Tu consulta</label>
-                    <textarea name="comentario" id="comentario" cols="20" rows="10"></textarea>
-                </div>
-              
-                <input class="enviar" type="submit" value="Enviar">                
-                
-            </form>
-
-            <div class="masContactos animacion-1">
-                <div>
-                    <h2>Donde estamos</h2>
-                    <p>Nos encontramos en el centro de la <span>Ciudad de Santa Fe</span>, Provincia de Santa Fe. Vendemos e instalamos en otras localidades.</p>
-                </div>
-                <div>
-                    <h2>Comunícate</h2>
-                    <p> Llamando o Wtsp al: <span>(0342) 154 239 498</span></p>
-                </div>
-                <div>
-                    <h2> Escríbenos</h2>
-                    <p> Por e-mail a: <span>cerco-santafe@gmail.com</span></p>
-                </div>
-                <div>
-                    <h2>Síguenos</h2>
-                    <p>En nuestras redes sociales <a target="_blank" href="https://www.instagram.com/cerco_santafe/" >Instagram</a> y <a target="_blank" href="https://www.facebook.com/CERCOSANTAFE" >Facebook</a></p>
-                </div>        
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active transform-5" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active transform-5" href="Producto.html">Nuestro Producto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active transform-5" href="trabajos-realizados.html">Trabajos Realizados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active transform-5" href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active transform-5" href="contacto.html">Contactos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-        </section>   
-    </main>
+        </header>
+        
+    <!--aplicando boopstrap en main -->
+        <main>
+            <div class="titulo">
+                <h1>CONTÁCTANOS</h1>
+            </div>
+            <div class="container">
+                <section class="contactoContenido row px-0 py-5">
+                    <form class= "animacion-1 col-12 col-md-4 px-4 mx-auto">
+                        <h2>Envíanos tu consulta</h2>
+                        <div class="">
+                            <div>
+                                <label for="Nombre">Nombre</label>
+                                <input required type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre..">
+                            </div>
+                            <div>
+                                <label for="e-mail">Correo Electrónico</label>
+                                <input required type="text" id="e-mail" name="e-mail" placeholder="Ingrese su e-mail..">
+                            </div>
+                            <div>
+                                <label for="localidad">Localidad</label>
+                                <input required type="text" id="e-localidad" name="localidad" placeholder="Ingrese su localidad..">
+                            </div>
+                            <div>
+                                <label for="Asunto">Asunto</label>
+                                <input required type="text" id="asunto" name="asunto" placeholder="Ingrese su e-mail..">
+                            </div>
+                            <div>
+                                <label for="comentario">Tu consulta</label>
+                                <textarea name="comentario" id="comentario" cols="20" rows="10"></textarea>
+                            </div>
+                            <input class="enviar" type="submit" value="Enviar">               
+                        </div>
+                    </form>
+
+                    <div class="masContactos animacion-1 col-12 col-md-4 px-4 mx-auto">
+                        <div>
+                            <h2>Donde estamos</h2>
+                            <p>Nos encontramos en el centro de la <span>Ciudad de Santa Fe</span>, Provincia de Santa Fe. Vendemos e instalamos en otras localidades.</p>
+                        </div>
+                        <div>
+                            <h2>Comunícate</h2>
+                            <p> Llamando o Wtsp al: <span>(0342) 154 239 498</span></p>
+                        </div>
+                        <div>
+                            <h2> Escríbenos</h2>
+                            <p> Por e-mail a: <span>cerco-santafe@gmail.com</span></p>
+                        </div>
+                        <div>
+                            <h2>Síguenos</h2>
+                            <p>En nuestras redes sociales <a target="_blank" href="https://www.instagram.com/cerco_santafe/" >Instagram</a> y <a target="_blank" href="https://www.facebook.com/CERCOSANTAFE" >Facebook</a></p>
+                        </div>        
+                    </div>
+                </section>
+            </div>       
+        </main>
   
-    <footer class="footer">
-        <p>©2022 - Melisa Primon - Todos los derechos reservados</p>
-        <a href="#top"><img src="../imagenes/LOGO.png" alt="logo cerco santa fe"></a>
-    </footer>
+        <!-- aplicando bootstrap en footer -->
+        <footer class="d-flex flex-wrap-reverse align-items-center py-3 g-1">
+            <p class="m-0 mx-auto text-center">©2022 - Melisa Primon - Todos los derechos reservados</p>
+            <a class= "mx-auto" href="#top"><img class="pe-3 pb-2" width="180px" src="../imagenes/LOGO.png" alt="logo cerco santa fe"></a>
+        </footer>
+    </div>
 </body>
 </html>

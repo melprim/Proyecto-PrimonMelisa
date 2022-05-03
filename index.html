@@ -25,114 +25,153 @@
     <!-- css -->
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body class="pagina">
-    <a target="_blank" href="https://api.whatsapp.com/send?phone=+5493424239498" class="whatsapp fab fa-whatsapp-square"></a>
-    <header class="header">  
-        <img src="imagenes/LOGO.png" alt="logo cerco santa fe">
-        <a href="#barra">
-            <i class="fas fa-bars"></i>
-        </a>    
-        <nav id="barra">
-            <ul> 
-                <li><a class="transform-5" href="index.html">Home</a></li>
-                <li><a class="transform-5" href="pages/Producto.html">Nuestro Producto</a></li>
-                <li><a class="transform-5" href="pages/trabajos-realizados.html">Trabajos Realizados</a></li>
-                <li><a class="transform-5" href="pages/preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                <li><a class="transform-5" href="pages/contacto.html">Contacto</a></li>
-                <li><a class="cruz" href="#">X</a></li>
-            </ul>
-        </nav>
-    </header>
+<body>
+    <div class="container-fluid px-0">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=+5493424239498" class="whatsapp fab fa-whatsapp-square"></a> 
 
-    <main class="main">
+    <!-- aplicando bootsatrap a header -->
+        <header>
+            <div class="shadow bg-body rounded">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white py-0 align-items-end px-3">
+                    <a class="navbar-brand py-0 my-3 me-0" href="#"><img src="imagenes/LOGO.png" class="img-fluid" width="180px"></a>
+                    <button class="navbar-toggler my-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon"></span></button>
 
-        <video class="videoInicio" autoplay src="videos/video intro.mp4"></video>  
-                
-        <section class="slogan">
-            <div><h1>CERCOS REMOVIBLES PARA PISCINAS</h1></div>
-            <p>En CERCO SANTA FE, vendemos SEGURIDAD para PROTEGER A TU FAMILIA</p>
-            <p>Los CERCOS REMOVIBLES son una SOLUCION SEGURA para evitar accidentes por ahogamiento. Diseñados para impedir el paso de los niños al área de riesgo, ya que no hay punto de apoyo por donde trepar y pensados para BRINDARTE TRANQUILIDAD EN TODO MOMENTO.</p>
-            <a class="transform-2" href="pages/Producto.html">Conoce más sobre Nuestros Cercos</a>
-        </section>
-
-        <section class="introduccion">
-            <div>
-                <img src="imagenes/seguridady calid.png" alt="">
-                <p class=transform-1>Seguridad y Calidad</p>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active transform-5" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active transform-5" href="pages/Producto.html">Nuestro Producto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active transform-5" href="pages/trabajos-realizados.html">Trabajos Realizados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active transform-5" href="pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active transform-5" href="pages/contacto.html">Contactos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <div> 
-                <img src="imagenes/protecion.png" alt="">
-                <p class=transform-1>Protección y Cuidado</p>
-            </div>  
-            <div>
-                <img src="imagenes/atencion.png" alt="">
-                <p class=transform-1>Asesoramiento Profesional y Personalizado</p>
-            </div>
-            <div>
-                <img src="imagenes/instalacion.png" alt="">
-                <p class=transform-1>Servicio de Instalación</p>        
-            </div>
-        </section>
+        </header>
 
-        <section class="caracteristicas">
-            
-            <div><h2>¿POR QUÉ ELEGIR NUESTROS CERCOS?</h2></div>
+    <!-- aplicando bootstrap en seccion de main -->
+        <main>
+            <video autoplay src="videos/video intro.mp4" width="100%"></video>  
+            <div class="row">
+                <div class="col col-md-6 mx-auto px-0">
+                    <div class="card border-0 text-center py-5">
+                        <section class="card-body d-flex flex-column p-0">
+                            <div class="titulo_ppal"><h1 class="card-title">CERCOS REMOVIBLES PARA PISCINAS</h1></div>
+                            <div class="card-text lh-lg px-3 my-4">
+                                <p>En CERCO SANTA FE, vendemos SEGURIDAD para PROTEGER A TU FAMILIA</p>
+                                <p>Los CERCOS REMOVIBLES son una SOLUCION SEGURA para evitar accidentes por ahogamiento. Diseñados para impedir el paso de los niños al área de riesgo, ya que no hay punto de apoyo por donde trepar y pensados para BRINDARTE TRANQUILIDAD EN TODO MOMENTO.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="boton">
+                        <a class= transform-2 href="pages/Producto.html">Conoce más sobre Nuestros Cercos</a>
+                    </div>
+                </div>
+            </div>
+    <!-- fin -->
 
-            <section class="ref animacion-1">
-                <img src="imagenes/Seguridad.jpeg" alt="seguridad para niños y mascotas">
-                <h3>100% SEGUROS Y DE GRAN CALIDAD</h3> 
-                <p>Realizados con materiales de excelente calidad, que garantizan la efectividad a la hora de contener los impactos.</p>
-                <h3>RESISTENTES Y PERDURABLES</h3>
-                <p>Uno de los ppales componentes de los Cercos Removibles es su tela, la cual es una malla de poliester recubierta de PVC que soporta 10 años de exposición solar e mpactos de 20 kg x cm2, lo que lo hace un producto duradero y de cero mantenimiento</p>
+            <section class="introduccion">
+                <div>
+                    <img src="imagenes/seguridady calid.png" alt="">
+                    <p class=transform-1>Seguridad y Calidad</p>
+                </div>
+                <div> 
+                    <img src="imagenes/protecion.png" alt="">
+                    <p class=transform-1>Protección y Cuidado</p>
+                </div>  
+                <div>
+                    <img src="imagenes/atencion.png" alt="">
+                    <p class=transform-1>Asesoramiento Profesional y Personalizado</p>
+                </div>
+                <div>
+                    <img src="imagenes/instalacion.png" alt="">
+                    <p class=transform-1>Servicio de Instalación</p>        
                 </div>
             </section>
 
-            <section class="ref animacion-1">
-                <img src="imagenes/Estetica.jpeg" alt="La estetica acompaña el diseño de los espacios">
-                <h3>ESTETICOS</h3>
-                <p>La simpleza de su composición y su transparencia hacen que sea un producto que acompaña el diseño de tus espacios</p>
-                <h3>REMOVIBLES</h3>
-                <p>Pueden ser removidos de forma parcial o total fácilmente, por lo que es un producto sumamente práctico y funcional</p>
-            </section>
-
-            <section class="ref animacion-1">
-                <img src="imagenes/a medida.jpeg" alt="a medida">
-                <h3>HECHOS A MEDIDA</h3>
-                <p>El diseño de una pileta es único y nuestros cercos son adaptables a cada una de ellas, satisfaciendo sus necesidades especificas</p>
-                <h3>SERVICIO INTEGRAL Y PERSONALIZADO</h3>
-                <p>En Cerco Santa Fe tenemos personal altamente capacitado que te acompañará en todo el proceso, desde tu consulta hasta que tu cerco ya se encuentre cuidando de tu familia.</p>
-            </section> 
-        </section>
-
-        <div class="boton">
-            <a class= transform-2 href="pages/trabajos-realizados.html">Mirá Nuestros trabajos Realizados</a>
-        </div>
-
-        <section class="seccionFinal">
-            <div class="seccionFinal__subtitulo animacion-2">
-                <a href="pages/contacto.html">PEDI TU PRESUPUESTO HOY</a>
-            </div>
-            <div>
-                <p>Síguenos en nuestras redes</p>
-                <div class="logos">
-                    <a target="_blank" href="https://www.facebook.com/CERCOSANTAFE" class="iconos fab fa-facebook-square"></a>
-                    <a target="_blank" href="https://www.instagram.com/cerco_santafe/" class="iconos fab fa-instagram-square"></a>
+    <!-- aplicando bootstrap a seccion main  -->
+            <section class="container-xl px-0">
+                <div class="row px-0">
+                    <div><h2 class="titulo_sec text-center py-5 my-5">¿POR QUÉ ELEGIR NUESTROS CERCOS?</h2></div>
+                    <div class="col-12 col-md-4">
+                        <div class="card border-0 text-center animacion-1">
+                            <img class="card-img-top img-caracteristica" src="imagenes/Seguridad.jpeg" alt="Card image">
+                            <div class="card-body">
+                                <h3 class="titulo-h3">100% SEGUROS Y DE GRAN CALIDAD</h3> 
+                                <p>Realizados con materiales de excelente calidad, que garantizan la efectividad a la hora de contener los impactos.</p>
+                                <h3 class="titulo-h3">RESISTENTES Y PERDURABLES</h3>
+                                <p >Uno de los ppales componentes de los Cercos Removibles es su tela, la cual es una malla de poliester recubierta de PVC que soporta 10 años de exposición solar e mpactos de 20 kg x cm2, lo que lo hace un producto duradero y de cero mantenimiento</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card border-0 text-center animacion-1">
+                            <img class="card-img-top img-caracteristica" src="imagenes/Estetica.jpeg" alt="Card image">
+                            <div class="card-body">
+                                <h3 class="titulo-h3">ESTETICOS</h3>
+                                <p>La simpleza de su composición y su transparencia hacen que sea un producto que acompaña el diseño de tus espacios</p>
+                                <h3 class="titulo-h3">REMOVIBLES</h3>
+                                <p>Pueden ser removidos de forma parcial o total fácilmente, por lo que es un producto sumamente práctico y funcional</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card border-0 text-center animacion-1">
+                            <img class="card-img-top img-caracteristica" src="imagenes/a medida.jpeg" alt="Card image">
+                            <div class="card-body">
+                                <h3 class="titulo-h3">HECHOS A MEDIDA</h3>
+                                <p>El diseño de una pileta es único y nuestros cercos son adaptables a cada una de ellas, satisfaciendo sus necesidades especificas</p>
+                                <h3 class="titulo-h3">SERVICIO INTEGRAL Y PERSONALIZADO</h3>
+                                <p>En Cerco Santa Fe tenemos personal altamente capacitado que te acompañará en todo el proceso, desde tu consulta hasta que tu cerco ya se encuentre cuidando de tu familia.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>    
-            </div>
-            <div>
-                <p>Comunícate con nosotros</p>
-                <div class="logos">
-                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+5493424239498" class="iconos fab fa-whatsapp-square"></a>
-                    <a target="_blank" href="mailto:cerco-santafe@gmail.com" class="iconos fas fa-envelope"></a>
-                    <a href="pages/contacto.html" class="iconos fas fa-clipboard-list"></a> 
-                </div>               
-            </div>
-        </section>
-    </main>
+            </section>
+    <!-- fin --> 
 
-    <footer class="footer">
-        <p>©2022 - Melisa Primon - Todos los derechos reservados</p>
-        <a href="#top"><img src="imagenes/LOGO.png" alt="logo cerco santa fe"></a>
-    </footer>
+            <div class="boton">
+                <a class= transform-2 href="pages/trabajos-realizados.html">Mirá Nuestros trabajos Realizados</a>
+            </div>
+
+            <section class="seccionFinal">
+                <div class="seccionFinal__subtitulo animacion-2">
+                    <a href="pages/contacto.html">PEDI TU PRESUPUESTO HOY</a>
+                </div>
+                <div>
+                    <p>Síguenos en nuestras redes</p>
+                    <div class="logos">
+                        <a target="_blank" href="https://www.facebook.com/CERCOSANTAFE" class="iconos fab fa-facebook-square"></a>
+                        <a target="_blank" href="https://www.instagram.com/cerco_santafe/" class="iconos fab fa-instagram-square"></a>
+                    </div>    
+                </div>
+                <div>
+                    <p>Comunícate con nosotros</p>
+                    <div class="logos">
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=+5493424239498" class="iconos fab fa-whatsapp-square"></a>
+                        <a target="_blank" href="mailto:cerco-santafe@gmail.com" class="iconos fas fa-envelope"></a>
+                        <a href="pages/contacto.html" class="iconos fas fa-clipboard-list"></a> 
+                    </div>               
+                </div>
+            </section>
+        </main>
+
+    <!-- aplicando bootstrap en footer -->
+        <footer class="d-flex flex-wrap-reverse align-items-center py-3 g-1">
+            <p class="m-0 mx-auto text-center">©2022 - Melisa Primon - Todos los derechos reservados</p>
+            <a class= "mx-auto" href="#top"><img class="pe-3 pb-2" width="180px" src="imagenes/LOGO.png" alt="logo cerco santa fe"></a>
+        </footer>
+    </div>    
 </body>
 </html>

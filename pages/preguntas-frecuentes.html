@@ -25,67 +25,111 @@
     <!-- css -->
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body class="pagina">
-    <a target="_blank" href="https://api.whatsapp.com/send?phone=+5493424239498" class="whatsapp fab fa-whatsapp-square"></a>    
-    <header class="header">
-        <img src="../imagenes/LOGO.png" alt="logo cerco santa fe">
-        <a href="#barra">
-            <i class="fas fa-bars"></i>
-        </a>   
-        <nav id="barra"> 
-            <ul>
-                <li><a class="transform-5" href="../index.html">Home</a></li>
-                <li><a class="transform-5" href="Producto.html">Nuestro Producto</a></li>
-                <li><a class="transform-5" href="trabajos-realizados.html">Trabajos Realizados</a></li>
-                <li><a class="transform-5" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                <li><a class="transform-5" href="contacto.html">Contacto</a></li>
-                <li><a class="cruz" href="#">X</a></li>
-            </ul>
-        </nav>
-    </header>
+<body>
+    <div class="container-fluid px-0">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=+5493424239498" class="whatsapp fab fa-whatsapp-square"></a> 
 
-    <main class="main">
-        <div class="titulo"><h1>PREGUNTAS FRECUENTES</h1></div>
-        <section class="preguntas animacion-4">
-            <div>
-                <dl>
-                    <dt>¿USTEDES INSTALAN LOS CERCOS?</dt>
-                    <dd>Si, Contamos con personal altamente capacitados con más de 15 años de experiencia en instalación de Cercos y asesoramiento personalizado.</dd>
-                </dl>
+    <!-- aplicando bootsatrap a header -->
+        <header>
+            <div class="shadow bg-body rounded">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white py-0 align-items-end px-3">
+                    <a class="navbar-brand py-0 my-3 me-0" href="#"><img src="../imagenes/LOGO.png" class="img-fluid" width="180px"></a>
+                    <button class="navbar-toggler my-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon"></span></button>
 
-                <dl>
-                    <dt>¿EL CERCO TIENE UN CIERRE BIEN SEGURO?</dt>
-                    <dd>Si, se utilizan cierres tipo broches con mecanismo de seguridad, para que los niños no puedan abrirlos</dd>
-                </dl>
-            
-                <dl>
-                    <dt>¿SIRVE EL CERCO COMO CERRAMIENTO DE OTROS ESPACIOS?</dt>
-                    <dd>Si, nuestros cercos pueden ser instalados para delimitar cualquier espacio donde se quiera proteger del ingreso o egreso de niños y/o mascotas. En cualquier situación, cumplirá con su principal objetivo que es la SEGURIDAD.</dd>
-                </dl>
-
-                <dl>
-                    <dt>¿A QUE PROFUNDIDAD SON LAS PERFORACIONES?</dt>
-                    <dd>Si la instalación es sobre loseta o cemento, se perfora a unos 9/10cm de profundidad. Si la instalación es sobre cesped, se clava una estaca hasta los 48cm aproximadamente de porfundidad</dd>
-                </dl>
-
-                <dl>
-                    <dt>¿EN LA INSTALACIÓN SOBRE LOSETA, HAY POSIBILIDADES DE PERFORAR LOS CAÑOS DE LA PISCINA?</dt>
-                    <dd>Si, ya que la perforación se realiza con una máquina del tipo instrustrial que trabaja con agua por lo que no hay posibilidades en el momento de saber si se esta o no perforando algun caño. POR ESTE MOTIVO, ES INDISPENSABLE QUE PREVIO A LA INSTALACION, SE LE INFORME AL INSTALADOR LA UBICACION EXACTA DE LAS CAÑERIAS.</dd>
-                </dl>
-
-                <dl>
-                    <dt>¿EN LA INSTALACION SOBRE CESPED, PUEDE SER QUE NO TENSE BIEN EL CERCO? </dt>
-                    <dd>Si, ya que este tipo de instalación depende mucho de la densidad del suelo.</dd>
-                </dl>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active transform-5" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active transform-5" href="Producto.html">Nuestro Producto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active transform-5" href="trabajos-realizados.html">Trabajos Realizados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active transform-5" href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active transform-5" href="contacto.html">Contactos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <img src="../imagenes/paralax.jpg" alt="">
-        </section>    
-        <h2 class="masPreguntas transform-4"><a href="contacto.html">Si tenés más preguntas, <span>NO DUDES EN CONTACTARNOS</span></a></h2>
-    </main>
-   
-    <footer class="footer">
-        <p>©2022 - Melisa Primon - Todos los derechos reservados</p>
-        <a href="#top"><img src="../imagenes/LOGO.png" alt="logo cerco santa fe"></a>
-    </footer>
+        </header>
+    
+    <!-- aplicando bootstrap a main -->
+        <main>
+            <div class="titulo"><h1>PREGUNTAS FRECUENTES</h1></div>
+            <div class="container">
+                <div class="row">
+                    <section class= "col-12 col-lg-8 mb-5 px-0 mx-auto">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item border-0 pb-2">
+                                <h2 class="accordion-header" id="headingOne"><button type="button" class="btn btn-dark w-100 p-3 bg-black" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">¿USTEDES INSTALAN LOS CERCOS?</button></h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body px-5 text-center">Si, Contamos con personal altamente capacitados con más de 15 años de experiencia en instalación de Cercos y asesoramiento personalizado.</div>
+                                </div> 
+                            </div>
+                        
+                            <div class="accordion-item border-0 pb-2">
+                                <h2 class="accordion-header" id="headingTwo"><button type="button" class="btn btn-dark w-100 p-3 bg-black" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">¿EL CERCO TIENE UN CIERRE BIEN SEGURO?</button></h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body px-5 text-center">Si, se utilizan cierres tipo broches con mecanismo de seguridad, para que los niños no puedan abrirlos.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0 pb-2">
+                                <h2 class="accordion-header" id="headingThree"><button type="button" class="btn btn-dark w-100 p-3 bg-black" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">¿SIRVE EL CERCO COMO CERRAMIENTO DE OTROS ESPACIOS?</button></h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body px-5 text-center">Si, nuestros cercos pueden ser instalados para delimitar cualquier espacio donde se quiera proteger del ingreso o egreso de niños y/o mascotas. En cualquier situación, cumplirá con su principal objetivo que es la SEGURIDAD.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0 pb-2">
+                                <h2 class="accordion-header" id="headingfour"><button type="button" class="btn btn-dark w-100 p-3 bg-black" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">¿A QUE PROFUNDIDAD SON LAS PERFORACIONES?</button></h2>
+                                <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body px-5 text-center">Si la instalación es sobre loseta o cemento, se perfora a unos 9/10cm de profundidad. Si la instalación es sobre cesped, se clava una estaca hasta los 48cm aproximadamente de porfundidad.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0 pb-2">
+                                <h2 class="accordion-header" id="headingfive"><button type="button" class="btn btn-dark w-100 p-3 bg-black" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapseThree">¿EN LA INSTALACIÓN SOBRE LOSETA, HAY POSIBILIDADES DE PERFORAR LOS CAÑOS DE LA PISCINA?</button></h2>
+                                <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body px-5 text-center">Si, ya que la perforación se realiza con una máquina del tipo instrustrial que trabaja con agua por lo que no hay posibilidades en el momento de saber si se esta o no perforando algun caño. POR ESTE MOTIVO, ES INDISPENSABLE QUE PREVIO A LA INSTALACION, SE LE INFORME AL INSTALADOR LA UBICACION EXACTA DE LAS CAÑERIAS.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0 pb-2">
+                                <h2 class="accordion-header" id="headingsix"><button type="button" class="btn btn-dark w-100 p-3 bg-black" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapseThree">¿EN LA INSTALACION SOBRE CESPED, PUEDE SER QUE NO TENSE BIEN EL CERCO?</button></h2>
+                                <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body px-5 text-center">Si, ya que este tipo de instalación depende mucho de la densidad del suelo.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="container">    
+                <div class="row mb-5"> 
+                    <section class= "col-12 col-lg-8 mx-auto position-relative text-center px-0">
+                        <img src="../imagenes/paralax.jpg" class="img-fluid" alt="">
+                            <div class="position-absolute bottom-0 pb-1 w-100 transform-4">
+                                <p class="mb-0 fs-3"> Si tenés más preguntas</p>
+                                <a class="masPreguntas fs-4" href="contacto.html"><span>NO DUDES EN CONTACTARNOS</span></a>
+                            </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        
+    <!-- aplicando bootstrap en footer -->
+        <footer class="d-flex flex-wrap-reverse align-items-center py-3 g-1">
+            <p class="m-0 mx-auto text-center">©2022 - Melisa Primon - Todos los derechos reservados</p>
+            <a class= "mx-auto" href="#top"><img class="pe-3 pb-2" width="180px" src="../imagenes/LOGO.png" alt="logo cerco santa fe"></a>
+        </footer>
+    </div>
 </body>
 </html>
