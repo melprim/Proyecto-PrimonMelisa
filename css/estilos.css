@@ -24,7 +24,8 @@ ul {
     font-family: 'Oswald', sans-serif;
     font-size: 40px;
     color: #8B857E;
-    font-weight: 600;    
+    font-weight: 600; 
+    margin-top: 2rem;   
 }
 
 .introduccion {
@@ -49,17 +50,26 @@ ul {
     padding: 6rem 2rem;
     font-size: 18px;
 }
+.introduccion div p{
+    margin-bottom: 0;
+}
 
 .titulo_sec{
-    font-size: 35px;
+    font-size: 38px;
     color: #8B857E;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
+}
+.fondo_boton{
+    background-color: #e6e3df;
 }
 
 .img-caracteristica{
     width: 100%;
     height: 300px;
+    object-fit: cover;
+}
+.img-carrusel1{
     object-fit: cover;
 }
 
@@ -69,7 +79,7 @@ ul {
 }
 
 .boton {
-    margin-bottom: 5rem;
+    margin: 5rem 0;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -138,6 +148,7 @@ ul {
     border-radius: 5px;
     display: inline-block;
 }
+
 /* FIN DE PAGINA INICIO */
 
 /* COMIENZO CONTACTOS */
@@ -239,7 +250,7 @@ ul {
 }
 
 .masPreguntas span{
-    color: #8B857E;
+    color: rgb(139, 133, 126);
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
 }
@@ -247,18 +258,54 @@ ul {
 
 /* INICIO PRODUCTO */
 .subtitulo{
-    color: #8B857E;
+    color: white;
     background-color: black;
     font-size: 25px;
-    padding: 5rem 0;
+    padding: 15px 0;
+}
+
+.caja{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
 }
 
 .img-producto{
     height: 500px;
+    width: 100%;
+    transition: all 500ms ease-out;
     object-fit: cover;
-    object-position: center;
     overflow: hidden;
 }
+
+.texto-hover{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    color: black;
+}
+
+.caja:hover .texto-hover{
+    opacity: 1;
+    visibility: visible;
+}
+
+.agrupadas{
+    display: flex;
+    gap: 5px;
+}
+
 /* FIN PRODUCTOS */
 
 /* INICIO MEDIA QUERIES */
@@ -276,7 +323,12 @@ ul {
     }
     .introduccion div{
         border: 1px solid #8B857E;
-        padding: 4rem 2rem;
+        padding: 2rem;
+        gap: 1rem;
+        font-size: 12px;
+    }
+    .introduccion img{
+        width: 20%;
     }
     .seccionFinal{
         padding: 5rem 2rem;
@@ -298,8 +350,13 @@ ul {
 
     /* HOME */
     .titulo_sec{
-        font-size: 22px;
+        font-size: 24px;
     }
+    .introduccion div{
+        border: 1px solid #8B857E;
+        padding: 1rem;
+    }
+
     .seccionFinal{
         grid-template-columns: 1fr;
         padding: 3re 1rem;
@@ -321,7 +378,7 @@ ul {
 .transform-1 {
     transition: 0.5s;
 }
-.transform-1:hover{
+.transform-1:hover p{
     transform: scale(1.5);
     color: white;
 }
