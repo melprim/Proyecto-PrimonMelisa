@@ -25,7 +25,8 @@ ul {
     font-size: 40px;
     color: #8B857E;
     font-weight: 600; 
-    margin-top: 2rem;   
+    margin-top: 2rem; 
+    padding: 0 15px; 
 }
 
 .introduccion {
@@ -79,7 +80,7 @@ ul {
 }
 
 .boton {
-    margin: 5rem 0;
+    margin: 3rem 0 5rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -349,6 +350,9 @@ ul {
 @media screen and (max-width: 425px) {
 
     /* HOME */
+    .introduccion{
+        grid-template-columns: 1fr;
+    }
     .titulo_sec{
         font-size: 24px;
     }
@@ -371,7 +375,8 @@ ul {
     /* CONTACTO */
     .masContactos{
         text-align: center;
-    }    
+    }  
+
 }
 
 /* TRANSFIRMACION-TRANSICIONES-ANIMACIONES */
