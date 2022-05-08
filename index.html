@@ -26,194 +26,187 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <div class="container-fluid px-0">
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=+5493424239498" class="whatsapp fab fa-whatsapp-square"></a>
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=+5493424239498" class="whatsapp fab fa-whatsapp-square"></a>
 
-    <!-- aplicando bootsatrap a header -->
-        <header>
-            <div class="shadow bg-body rounded">
-                <nav class="navbar navbar-expand-lg navbar-light bg-white py-0 align-items-end px-3">
-                    <a class="navbar-brand py-0 my-3 me-0" href="#"><img src="imagenes/LOGO.png" class="img-fluid" width="180px"></a>
-                    <button class="navbar-toggler my-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
-                    <span class="navbar-toggler-icon"></span></button>
+<!-- aplicando bootsatrap a header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-0 align-items-end px-3 fixed-top header">
+            <a class="navbar-brand py-0 my-3 me-0" href="#"><img src="imagenes/LOGO.png" class="img-fluid" width="180px"></a>
+            <button class="navbar-toggler my-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <span class="navbar-toggler-icon"></span></button>
 
-                    <div class="collapse navbar-collapse" id="navbar">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active transform-5" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active transform-5" href="pages/Producto.html">Nuestro Producto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active transform-5" href="pages/trabajos-realizados.html">Trabajos Realizados</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active transform-5" href="pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active transform-5" href="pages/contacto.html">Contactos</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link active transform-5" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active transform-5" href="pages/Producto.html">Nuestro Producto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active transform-5" href="pages/trabajos-realizados.html">Trabajos Realizados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active transform-5" href="pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active transform-5" href="pages/contacto.html">Contactos</a>
+                    </li>
+                </ul>
             </div>
-        </header>
+        </nav>
+    </header>
 
-    <!-- aplicando bootstrap en seccion de main -->
-        <main class="container-fluid px-0">
-            <video autoplay src="videos/video intro.mp4" width="100%"></video>
-            <div class="row gx-0">
-                <div class="col col-md-6 mx-auto px-0 mx-auto">
-                    <div class="card border-0 text-center pt-5">
-                        <section class="card-body d-flex flex-column p-0">
-                            <div class="titulo_ppal"><h1 class="card-title">CERCOS REMOVIBLES PARA PISCINAS</h1></div>
-                            <div class="card-text lh-lg px-3 my-4">
-                                <p>En CERCO SANTA FE, vendemos SEGURIDAD para PROTEGER A TU FAMILIA</p>
-                                <p>Los CERCOS REMOVIBLES son una SOLUCION SEGURA para evitar accidentes por ahogamiento. Diseñados para impedir el paso de los niños al área de riesgo, ya que no hay punto de apoyo por donde trepar y pensados para BRINDARTE TRANQUILIDAD EN TODO MOMENTO.</p>
-                            </div>
-                        </section>
+    <main>
+        <section>
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagenes/carrusel01.jpg" alt="Los Angeles" class="d-block w-100 img-carrusel1">
+                        <div class="carousel-caption d-none d-md-block top-50">
+                            <p class="display-2">CERCOS REMOVIBLES PARA PISCINAS</p>
+                            <p class="display-5">Protegiendo y Cuidando a quienes más querés</p>
+                        </div>
                     </div>
-                    <div class="boton">
-                        <a class= transform-2 href="pages/Producto.html">Conoce más sobre Nuestros Cercos</a>
+                    <div class="carousel-item">
+                        <img src="imagenes/carrusel02.jpg" alt="Chicago" class="d-block w-100 img-carrusel1">
+                        <div class="carousel-caption d-none d-md-block top-50">
+                            <p class="display-2">CERCOS REMOVIBLES PARA PISCINAS</p>
+                            <p class="display-5">Protegiendo y Cuidando a quienes más querés</p>
+                        </div>
                     </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/carrusel03.jpg" alt="New York" class="d-block w-100 img-carrusel1">
+                        <div class="carousel-caption d-none d-md-block top-50">
+                            <p class="display-2">CERCOS REMOVIBLES PARA PISCINAS</p>
+                            <p class="display-5">Protegiendo y Cuidando a quienes más querés</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/carrusel04.jpg" alt="New York" class="d-block w-100 img-carrusel1">
+                        <div class="carousel-caption d-none d-md-block top-50">
+                            <p class="display-2">CERCOS REMOVIBLES PARA PISCINAS</p>
+                            <p class="display-5">Protegiendo y Cuidando a quienes más querés</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <section class="slogan">
+            <h1 class="titulo_ppal">CERCOS REMOVIBLES PARA PISCINAS</h1>
+            <p>En CERCO SANTA FE, vendemos SEGURIDAD para PROTEGER A TU FAMILIA</p>
+            <p>Los CERCOS REMOVIBLES son una SOLUCION SEGURA para evitar accidentes por ahogamiento. Diseñados para impedir el paso de los niños al área de riesgo, ya que no hay punto de apoyo por donde trepar y pensados para BRINDARTE TRANQUILIDAD EN TODO MOMENTO.</p>
+            <div class="boton">
+                <a class= transform-2 href="pages/trabajos-realizados.html">Mirá Nuestros trabajos Realizados</a>
+            </div>
+        </section>
+
+        <section class="introduccion">
+            <div class="transform-1">
+                <img src="imagenes/seguridady calid.png" alt="">
+                <p class="transform-1">Seguridad y Calidad</p>
+            </div>
+            <div class="transform-1">
+                <img src="imagenes/protecion.png" alt="">
+                <p class="transform-1">Protección y Cuidado</p>
+            </div>
+            <div class="transform-1">
+                <img src="imagenes/atencion.png" alt="">
+                <p class="transform-1">Asesoramiento Profesional y Personalizado</p>
+            </div>
+            <div class="transform-1">
+                <img src="imagenes/instalacion.png" alt="">
+                <p class="transform-1">Servicio de Instalación</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="caracteristicas-subt">¿POR QUÉ ELEGIR NUESTROS CERCOS?</h2>
+            <section class="caracteristicas">
+                <div class="caracteristicas__img1 animacion-1">
+                    <img class= img-grid src="imagenes/Seguridad.jpeg" alt="seguridad para niños y mascotas">
+                </div>
+                <div class="caracteristicas__texto1">
+                    <h3>100% Seguros y de gran Calidad</h3> 
+                    <p>Realizados con materiales de excelente calidad, que garantizan la efectividad a la hora de contener los impactos.</p>
+                    <h3>Resistentes y Perdurables</h3>
+                    <p>Uno de los ppales componentes de los Cercos Removibles es su tela, la cual es una malla de poliester recubierta de PVC que soporta 10 años de exposición solar e mpactos de 20 kg x cm2, lo que lo hace un producto duradero y de cero mantenimiento</p>
+                    <div class="boton2">
+                        <a class= transform-2 href="pages/Producto.html">Conoce más</a>
+                    </div>
+                </div>
+                <div class="caracteristicas__img2 animacion-1">
+                    <img class= img-grid src="imagenes/Estetica.jpeg" alt="La estetica acompaña el diseño de los espacios">
+                </div>
+                <div class="caracteristicas__texto2">
+                    <h3>Estéticos</h3>
+                    <p>La simpleza de su composición y su transparencia hacen que sea un producto que acompaña el diseño de tus espacios</p>
+                    <h3>Removibles</h3>
+                    <p>Pueden ser removidos de forma parcial o total fácilmente, por lo que es un producto sumamente práctico y funcional</p>
+                    <div class="boton2">
+                        <a class= transform-2 href="pages/Producto.html">Conoce más</a>
+                    </div>
+                </div>
+                <div class="caracteristicas__img3 animacion-1">
+                    <img class= img-grid src="imagenes/a medida.jpeg" alt="a medida">
+                </div>
+                <div class="caracteristicas__texto3"> 
+                    <h3>Hechos a medida</h3>
+                    <p>El diseño de una pileta es único y nuestros cercos son adaptables a cada una de ellas, satisfaciendo sus necesidades especificas</p>
+                    <h3>Servicio Integral y Personalizado</h3>
+                    <p>En Cerco Santa Fe tenemos personal altamente capacitado que te acompañará en todo el proceso, desde tu consulta hasta que tu cerco ya se encuentre cuidando de tu familia.</p>
+                    <div class="boton2">
+                        <a class= transform-2 href="pages/Producto.html">Conoce más</a>
+                    </div>
+                </div>
+            </section> 
+        </section>
+
+        <section class="seccionFinal">
+            <div class="seccionFinal__subtitulo animacion-2">
+                <a href="pages/contacto.html">PEDI TU PRESUPUESTO HOY</a>
+            </div>
+            <div>
+                <p>Síguenos en nuestras redes</p>
+                <div class="logos">
+                    <a target="_blank" href="https://www.facebook.com/CERCOSANTAFE" class="iconos fab fa-facebook-square"></a>
+                    <a target="_blank" href="https://www.instagram.com/cerco_santafe/" class="iconos fab fa-instagram-square"></a>
                 </div>
             </div>
-    <!-- fin -->
+            <div>
+                <p>Comunícate con nosotros</p>
+                <div class="logos">
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+5493424239498" class="iconos fab fa-whatsapp-square"></a>
+                    <a target="_blank" href="mailto:cerco-santafe@gmail.com" class="iconos fas fa-envelope"></a>
+                    <a href="pages/contacto.html" class="iconos fas fa-clipboard-list"></a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-            <section class="introduccion">
-                <div class="transform-1">
-                    <img src="imagenes/seguridady calid.png" alt="">
-                    <p class="transform-1">Seguridad y Calidad</p>
-                </div>
-                <div class="transform-1">
-                    <img src="imagenes/protecion.png" alt="">
-                    <p class="transform-1">Protección y Cuidado</p>
-                </div>
-                <div class="transform-1">
-                    <img src="imagenes/atencion.png" alt="">
-                    <p class="transform-1">Asesoramiento Profesional y Personalizado</p>
-                </div>
-                <div class="transform-1">
-                    <img src="imagenes/instalacion.png" alt="">
-                    <p class="transform-1">Servicio de Instalación</p>
-                </div>
-            </section>
-
-        <!-- aplicando bootstrap a seccion main  -->
-            <section class="container px-0">
-                <h2 class="titulo_sec text-center py-5 mt-5 px-0">¿POR QUÉ ELEGIR NUESTROS CERCOS?</h2>
-                <div class="col-12 col-md-8 mx-auto mt-5">
-                    <!-- Accordion -->
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item border-0 pb-2">
-                            <h2 class="accordion-header" id="headingOne"><button type="button" class="btn btn-light w-100 p-3 fondo_boton" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">100% SEGUROS Y DE GRAN CALIDAD</button></h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body px-5 text-center">Realizados con materiales de excelente calidad, que garantizan la efectividad a la hora de contener los impactos.</div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 pb-2">
-                            <h2 class="accordion-header" id="headingTwo"><button type="button" class="btn btn-light w-100 p-3 fondo_boton" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">RESISTENTES Y PERDURABLES</button></h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body px-5 text-center">Uno de los ppales componentes de los Cercos Removibles es su tela, la cual es una malla de poliester recubierta de PVC que soporta 10 años de exposición solar e mpactos de 20 kg x cm2, lo que lo hace un producto duradero y de cero mantenimiento.</div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 pb-2">
-                            <h2 class="accordion-header" id="headingThree"><button type="button" class="btn btn-light w-100 p-3 fondo_boton" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">ESTETICOS</button></h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body px-5 text-center">La simpleza de su composición y su transparencia hacen que sea un producto que acompaña el diseño de tus espacios.</div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 pb-2">
-                            <h2 class="accordion-header" id="headingfour"><button type="button" class="btn btn-light w-100 p-3 fondo_boton" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">REMOVIBLES</button></h2>
-                            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body px-5 text-center">Pueden ser removidos de forma parcial o total fácilmente, por lo que es un producto sumamente práctico y funcional.</div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 pb-2">
-                            <h2 class="accordion-header" id="headingfive"><button type="button" class="btn btn-light w-100 p-3 fondo_boton" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapseThree">HECHOS A MEDIDA</button></h2>
-                            <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body px-5 text-center">El diseño de una pileta es único y nuestros cercos son adaptables a cada una de ellas, satisfaciendo sus necesidades especificas.</div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 pb-2">
-                            <h2 class="accordion-header" id="headingsix"><button type="button" class="btn btn-light w-100 p-3 fondo_boton" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapseThree">SERVICIO INTEGRAL Y PERSONALIZADO</button></h2>
-                            <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body px-5 text-center">En Cerco Santa Fe tenemos personal altamente capacitado que te acompañará en todo el proceso, desde tu consulta hasta que tu cerco ya se encuentre cuidando de tu familia.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="boton">
-                    <a class= transform-2 href="pages/trabajos-realizados.html">Mirá Nuestros trabajos Realizados</a>
-                </div>
-
-                <div class="row gx-0 align-items-center mb-5">
-                    <div class="col-12 mt-4">
-                        <!-- Carousel -->
-                        <div id="demo" class="carousel slide" data-bs-ride="carousel">
-                            <!-- Indicators/dots -->
-                            <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                            </div>
-
-                            <!-- The slideshow/carousel -->
-                            <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="imagenes/Seguridad.jpeg" alt="Los Angeles" class="d-block w-100 img-carrusel1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="imagenes/Estetica.jpeg" alt="Chicago" class="d-block w-100 img-carrusel1">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="imagenes/a medida.jpeg" alt="New York" class="d-block w-100 img-carrusel1">
-                            </div>
-                            </div>
-
-                            <!-- Left and right controls/icons -->
-                            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-
-            </section>
-    <!-- fin -->
-
-            <section class="seccionFinal">
-                <div class="seccionFinal__subtitulo animacion-2">
-                    <a href="pages/contacto.html">PEDI TU PRESUPUESTO HOY</a>
-                </div>
-                <div>
-                    <p>Síguenos en nuestras redes</p>
-                    <div class="logos">
-                        <a target="_blank" href="https://www.facebook.com/CERCOSANTAFE" class="iconos fab fa-facebook-square"></a>
-                        <a target="_blank" href="https://www.instagram.com/cerco_santafe/" class="iconos fab fa-instagram-square"></a>
-                    </div>
-                </div>
-                <div>
-                    <p>Comunícate con nosotros</p>
-                    <div class="logos">
-                        <a target="_blank" href="https://api.whatsapp.com/send?phone=+5493424239498" class="iconos fab fa-whatsapp-square"></a>
-                        <a target="_blank" href="mailto:cerco-santafe@gmail.com" class="iconos fas fa-envelope"></a>
-                        <a href="pages/contacto.html" class="iconos fas fa-clipboard-list"></a>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-    <!-- aplicando bootstrap en footer -->
-        <footer class="d-flex flex-wrap-reverse align-items-center py-3 g-1">
-            <p class="m-0 mx-auto text-center">©2022 - Melisa Primon - Todos los derechos reservados</p>
-            <a class= "mx-auto" href="#top"><img class="pe-3 pb-2" width="180px" src="imagenes/LOGO.png" alt="logo cerco santa fe"></a>
-        </footer>
-    </div>
+    <footer class="d-flex flex-wrap-reverse align-items-center py-3 g-1">
+        <p class="m-0 mx-auto text-center">©2022 - Melisa Primon - Todos los derechos reservados</p>
+        <a class= "mx-auto" href="#top"><img class="pe-3 pb-2" width="180px" src="imagenes/LOGO.png" alt="logo cerco santa fe"></a>
+    </footer>
+    
 </body>
 </html>

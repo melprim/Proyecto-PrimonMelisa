@@ -20,16 +20,62 @@ ul {
 
 /* COMIENZO PAGINA INICIO */
 
+.header{
+    box-shadow: 0px 1px 10px #49474A;
+}
+
+.slogan{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8rem 0;
+}
+
+.slogan p{
+    font-size: 17px;
+    line-height: 2rem;
+    color: black;
+    text-align: center;
+    width: 60%;
+    
+}
+
+.slogan a{
+    height: auto;
+    margin-top: 4rem;
+    background-color: #49474A;
+    color: white;
+    padding: 15px;
+    border-radius: 5px; 
+}
+
 .titulo_ppal{
     font-family: 'Oswald', sans-serif;
     font-size: 40px;
     color: #8B857E;
     font-weight: 600; 
-    margin-top: 2rem; 
     padding: 0 15px; 
+    margin-bottom: 2rem;
 }
 
-.introduccion {
+.boton {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.boton a{
+    background-color: #49474A;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.introduccion{
     display: inline;
     background-color: #000000;
     color: #8B857E;
@@ -55,42 +101,67 @@ ul {
     margin-bottom: 0;
 }
 
-.titulo_sec{
-    font-size: 38px;
+.caracteristicas-subt{
+    font-size: 35px;
     color: #8B857E;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-}
-.fondo_boton{
-    background-color: #e6e3df;
-}
-
-.img-caracteristica{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-.img-carrusel1{
-    object-fit: cover;
-}
-
-.titulo-h3{
-    color: #8B857E;
-    font-size: 20px;
-}
-
-.boton {
-    margin: 3rem 0 5rem;
+    padding: 8rem 0;
     text-align: center;
-    display: flex;
-    justify-content: center;
 }
 
-.boton a{
+.caracteristicas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 400px); 
+    grid-template-areas: 
+        "caracteristica1 contenido1"
+        "caracteristica2 contenido2"
+        "caracteristica3 contenido3";
+    justify-items: center;
+}
+
+.caracteristicas__img1{
+    grid-area: caracteristica1;
+}
+
+.caracteristicas__texto1{
+    grid-area: contenido1;
+}
+
+.caracteristicas__img2{
+    grid-area: caracteristica2;
+}
+.caracteristicas__texto2{
+    grid-area: contenido2;
+}
+.caracteristicas__img3{
+    grid-area: caracteristica3;
+}
+.caracteristicas__texto3{
+    grid-area: contenido3;
+}
+.caracteristicas h3{
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.img-grid{
+    width: 400px;
+    box-shadow: 0px 2px 10px #49474A;
+    border-radius: 15px;
+}
+
+.boton2{
+    margin-top: 2rem;
+}
+
+.boton2 a{
     background-color: #49474A;
     color: white;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 15px;
 }
 
 .seccionFinal{
@@ -98,7 +169,7 @@ ul {
     grid-template-columns: repeat(2, 1fr);
     background-color: black;
     text-align: center;
-    padding: 5rem 0;
+    padding: 3rem 0;
     column-gap: 3rem;
     justify-content: center;
     align-items: center;
@@ -114,7 +185,7 @@ ul {
     display: inline;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 35px;
     color: #ffffff;
     border-bottom: 2px solid #ffffff;
 }
@@ -122,7 +193,7 @@ ul {
 .seccionFinal p{
     color: #8B857E;
     margin: 3rem 0 1rem;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -154,7 +225,7 @@ ul {
 
 /* COMIENZO CONTACTOS */
 .titulo{
-    margin: 6rem 0 6rem; 
+    margin: 11rem 0 6rem; 
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-size: 40px;
@@ -163,7 +234,7 @@ ul {
 }
 
 .contactoContenido{
-    background-color: black;
+    background-color: #222122;
 }
 
 .contactoContenido form{
@@ -208,7 +279,7 @@ ul {
 }
 
 .contactoContenido .enviar{
-    background-color: #D8D1C9;
+    background-color: #E6E3DF;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     width: 100px;
@@ -255,6 +326,12 @@ ul {
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
 }
+
+.fondo_boton{
+    background-color: #e6e3df;
+    font-size: 18px;
+    border-radius: 10px;
+}
 /* FIN PREGUNTAS FRECUENTES */
 
 /* INICIO PRODUCTO */
@@ -265,49 +342,103 @@ ul {
     padding: 15px 0;
 }
 
-.caja{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.6);
-    cursor: pointer;
+.composicion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 400px); 
+    grid-template-areas: 
+        "composicion1 conten1"
+        "composicion2 conten2"
+        "composicion3 conten3";
+    justify-items: center;
+}
+.composicion-img1{
+    grid-area: composicion1;
+}
+.composicion-texto1{
+    grid-area: conten1;
+}
+.composicion-img2{
+    grid-area: composicion2;
+}
+.composicion-texto2{
+    grid-area: conten2;
+}
+.composicion-img3{
+    grid-area: composicion3;
+}
+.composicion-texto4{
+    grid-area: conten4;
 }
 
 .img-producto{
-    height: 500px;
-    width: 100%;
-    transition: all 500ms ease-out;
+    width: 400px;
+    max-height: 250px;
+    box-shadow: 0px 2px 10px #49474A;
+    border-radius: 15px;
     object-fit: cover;
-    overflow: hidden;
 }
-
-.texto-hover{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 0;
-    padding: 0 20px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    color: black;
+.composicion h3{
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
 }
-
-.caja:hover .texto-hover{
-    opacity: 1;
-    visibility: visible;
+.titulo--instalacion{
+    margin-bottom: 6rem; 
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    color: #8B857E;
+    font-weight: 600;
+}
+.instalacion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 500px); 
+    grid-template-areas: 
+        "instalacion1 cont1"
+        "instalacion2 cont2";
+    justify-items: center;
+}
+.instalacion-img1{
+    grid-area: instalacion1;
+}
+.instalacion-text1{
+    grid-area: cont1;
+}
+.instalacion-img1{
+    grid-area: instalacion2;
+}
+.instalacion-text1{
+    grid-area: cont2;
 }
 
 .agrupadas{
     display: flex;
-    gap: 5px;
+    gap: 10px;
+}
+.img-producto2{
+    width: 200px;
+    max-height: 400px;
+    box-shadow: 0px 2px 10px #49474A;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+.instalacion h3{
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 /* FIN PRODUCTOS */
+
+/* TRABAJOS REALIZADOS */
+.img-galeria{
+    box-shadow: 0px 2px 10px #49474A;
+    border-radius: 15px;
+}
+/* FIN TRABAJOS REALIZADOS */
 
 /* INICIO MEDIA QUERIES */
 @media screen and (max-width: 992px) {
@@ -344,6 +475,12 @@ ul {
     /* CONTACTOS */
     .contactoContenido{
         gap: 3rem;
+    }
+
+    .caracteristicas{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+
     }
 }
 
