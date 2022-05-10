@@ -6,8 +6,6 @@
         bottom: 2px;
         right: 2px;
     }
-
-     /* HOME */
     .carrusel{
         margin-top: 5.5rem;
     }
@@ -54,7 +52,7 @@
         padding: 0;
     }
 
-    /* NUESTRO PRODUCTO */
+    
     .composicion{
         grid-auto-rows: auto;  
         grid-template-columns: 1fr;
@@ -74,7 +72,6 @@
         margin-top: 3rem;
     }
 
-    /* CONTACTOS */
     .contactoContenido{
         gap: 3rem;
     }
@@ -83,11 +80,8 @@
 @media screen and (max-width: 425px) {
 
     /* HOME */
-    .display-2{
-        font-size: 15px;
-    }
-    .display-5{
-        font-size: 10px;
+    .texto-carrusel{
+        display: none;
     }
     .carousel-indicators{
         display: none;
@@ -124,6 +118,10 @@
     /* CONTACTO */
     .masContactos{
         text-align: center;
-    }  
+    } 
+    
+    .img-galeria{
+        width: 300px;
+    }
 
 }
