@@ -1,0 +1,59 @@
+.subtitulo{
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    padding: 15px 0;
+}
+
+.titulo--instalacion{
+    margin-bottom: 6rem; 
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    color: #8B857E;
+    font-weight: 600;
+}
+
+.composicion{
+    display: grid;
+    grid-auto-rows: 400px; 
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    h3{
+        color: #000000;
+        font-size: 22px;
+        font-weight: bold;
+    }
+}
+
+.instalacion{
+    display: grid;
+    grid-auto-rows: 500px; 
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    h3{
+        color: #000000;
+        font-size: 22px;
+        font-weight: bold;
+    }
+}
+
+.agrupadas{
+    display: flex;
+    gap: 10px;
+}
+.img-producto{
+    width: 400px;
+    max-height: 250px;
+    box-shadow: 0px 2px 10px #49474A;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.img-producto2{
+    width: 200px;
+    max-height: 400px;
+    box-shadow: 0px 2px 10px #49474A;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+}
