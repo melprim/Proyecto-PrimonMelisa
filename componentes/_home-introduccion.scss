@@ -1,7 +1,7 @@
 .introduccion{
     display: inline;
     background-color: #000000;
-    color: #8B857E;
+    color: $color;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);

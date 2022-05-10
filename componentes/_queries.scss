@@ -24,7 +24,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
     .introduccion div{
-        border: 1px solid #8B857E;
+        border: 1px solid $color;
         padding: 2rem;
         gap: 1rem;
         font-size: 12px;
@@ -102,7 +102,7 @@
         font-size: 24px;
     }
     .introduccion div{
-        border: 1px solid #8B857E;
+        border: 1px solid $color;
         padding: 1rem;
     }
     .seccionFinal{

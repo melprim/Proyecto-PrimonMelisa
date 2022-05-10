@@ -28,14 +28,14 @@
         background-color: #49474A;
         color: white;
         padding: 15px;
-        border-radius: 5px; 
+        border-radius: 15px; 
     }
 }
 
 .titulo_ppal{
     font-family: 'Oswald', sans-serif;
     font-size: 40px;
-    color: #8B857E;
+    color: $color;
     font-weight: 600; 
     padding: 0 15px; 
     margin-bottom: 2rem;
@@ -45,12 +45,6 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    a{
-        background-color: #49474A;
-        color: white;
-        padding: 15px;
-        border-radius: 15px;
-    }
 }
 
 .transform-2 {
