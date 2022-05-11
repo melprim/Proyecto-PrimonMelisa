@@ -5,7 +5,9 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  max-width: 100%;
+  overflow-x: hidden; }
 
 a {
   text-decoration: none;
@@ -210,8 +212,14 @@ ul {
     transform: scale(1); } }
 
 .contactoContenido {
-  background-color: black; }
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center; }
   .contactoContenido form {
+    width: 80%;
+    padding: 20px;
+    margin-top: 3rem;
     align-items: center;
     justify-content: center; }
     .contactoContenido form h2 {
@@ -250,20 +258,24 @@ ul {
     font-size: 16px;
     border-radius: 5px;
     border: none; }
-  .contactoContenido div h2 {
-    font-size: 25px;
-    color: #8B857E; }
-  .contactoContenido div p {
-    line-height: 2rem;
-    margin-bottom: 3rem;
-    color: white;
-    font-size: 18px; }
-    .contactoContenido div p span {
+  .contactoContenido .masContactos {
+    padding: 20px;
+    margin-top: 3rem; }
+    .contactoContenido .masContactos h2 {
+      font-size: 25px;
+      color: #8B857E; }
+    .contactoContenido .masContactos p {
+      line-height: 2rem;
+      margin-bottom: 3rem;
+      color: white;
+      font-size: 18px;
+      padding-right: 20px; }
+      .contactoContenido .masContactos p span {
+        font-size: 22px;
+        color: #8B857E; }
+    .contactoContenido .masContactos a {
       font-size: 22px;
       color: #8B857E; }
-  .contactoContenido div a {
-    font-size: 22px;
-    color: #8B857E; }
 
 .animacion-3 {
   animation: contacto ease both;
@@ -379,7 +391,7 @@ ul {
 
 @media screen and (max-width: 825px) {
   .whatsapp {
-    font-size: 20px;
+    font-size: 35px;
     bottom: 2px;
     right: 2px; }
   .carrusel {
@@ -428,10 +440,18 @@ ul {
   .titulo--instalacion {
     margin-top: 3rem; }
   .contactoContenido {
-    gap: 3rem; } }
+    grid-template-columns: 1fr; }
+    .contactoContenido .masContactos {
+      width: 80%;
+      text-align: center; }
+      .contactoContenido .masContactos p {
+        padding: 0; }
+  .animacion-3 {
+    animation: none; }
+  .animacion-4 {
+    animation: none; } }
 
 @media screen and (max-width: 425px) {
-  /* HOME */
   .texto-carrusel {
     display: none; }
   .carousel-indicators {
@@ -456,8 +476,12 @@ ul {
     display: none; }
   .seccionFinal__subtitulo a::after {
     display: none; }
-  /* CONTACTO */
-  .masContactos {
-    text-align: center; }
+  .contactoContenido form {
+    width: 100%; }
+  .contactoContenido .masContactos {
+    width: 100%;
+    margin-top: 0; }
   .img-galeria {
-    width: 300px; } }
+    width: 300px; }
+  .texto-footer {
+    font-size: 10px; } }
