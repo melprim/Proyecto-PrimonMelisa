@@ -43,6 +43,14 @@ ul {
   display: flex;
   flex-direction: column; }
 
+.carousel-caption {
+  right: 5%;
+  left: 5%; }
+  .carousel-caption .display-3 {
+    font-size: 45px; }
+  .carousel-caption .display-6 {
+    font-size: 30px; }
+
 .slogan {
   width: 100%;
   height: auto;
@@ -396,10 +404,6 @@ ul {
     right: 2px; }
   .carrusel {
     margin-top: 5.5rem; }
-  .display-2 {
-    font-size: 40px; }
-  .display-5 {
-    font-size: 25px; }
   .slogan p {
     width: 90%; }
   .introduccion {

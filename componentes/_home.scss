@@ -3,6 +3,17 @@
     display: flex;
     flex-direction: column;
 }
+.carousel-caption{
+    right: 5%;
+    left: 5%;
+    .display-3{
+        font-size: 45px;
+    }
+    .display-6{
+        font-size: 30px;
+    }
+}
+
 
 .slogan{
     width: 100%;
