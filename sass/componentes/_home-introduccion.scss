@@ -2,7 +2,7 @@
     display: inline;
     background-color: #000000;
     color: $color;
-    text-align: center;
+    text-align: map-get($estilos, centro);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
@@ -13,8 +13,8 @@
     div{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: map-get($estilos, centro);
+        align-items: map-get($estilos, centro);
         gap: 2rem;
         padding: 6rem 2rem;
         font-size: $fontbase+2;
@@ -26,8 +26,8 @@
 }
 .transform-1 {
     transition: 0.5s;
-}
-.transform-1:hover p{
-    transform: scale(1.5);
-    color: white;
+    &:hover p{
+        transform: scale(1.5);
+        color: white;
+    }
 }

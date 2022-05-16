@@ -1,26 +1,21 @@
 .caracteristicas-subt{
+    @extend .estiloTituloSec;
     font-size: $fontlarge - 5;
-    color: $color;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
     padding: 8rem 0;
-    text-align: center;
 }
 
 .caracteristicas{
     display: grid;
     grid-auto-rows: 400px;
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    justify-items: map-get($estilos, centro);
     h3{
-        color: #000000;
-        font-size: $fontmedia - 3;
-        font-weight: bold;
+        @extend .estiloh3;
     }
     .img-grid{
         width: 400px;
-        box-shadow: 0px 2px 10px $bshadow;
-        border-radius: 15px;
+        box-shadow: $boxshadow;
+        border-radius: map-get($estilos, 15px);
     }
 }
 
@@ -28,10 +23,10 @@
 .boton2{
     margin-top: 2rem;
     a{
-        background-color: #49474A;
+        background-color: $bshadow;
         color: white;
         padding: 10px;
-        border-radius: 15px;
+        border-radius: map-get($estilos, 15px);
     }
 }
 .animacion-1:hover{

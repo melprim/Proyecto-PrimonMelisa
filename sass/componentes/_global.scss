@@ -22,7 +22,7 @@ ul {
 }
 
 .header{
-    box-shadow: 0px 1px 10px $bshadow;
+    box-shadow: $boxshadow;
 }
 
 .whatsapp{
@@ -37,11 +37,54 @@ ul {
     display: inline-block;
 }
 
-.titulo{
-    margin: 11rem 0 6rem; 
+@mixin titulos($margin) {
+    margin: $margin; 
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-size: $fontlarge;
     color: $color;
     font-weight: 600;
 }
+
+.titulo{
+    @include titulos(11rem 0 6rem);
+}
+
+.estiloh3{
+    color: #000000;
+    font-size: $fontmedia - 3;
+    font-weight: bold;
+}
+
+.estiloTituloSec {
+    color: $color;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-align: center;    
+}
+
+$iconosInicio: (
+    facebook: #385599,
+    instagram: #AD2DA2,
+    whatsapp: #0DC143,
+    mail: #EC8F5C,
+    contacto: #59B5E8,
+);
+
+@each $name, $colores in $iconosInicio {
+    .btn-#{$name} {
+        color: $colores;
+        font-size:$fontlarge+10;
+    }
+}
+
+$estilos:(
+    centro: center,
+    15px: 15px,
+);
+
+
+
+
+
+

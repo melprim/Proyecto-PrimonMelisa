@@ -2,17 +2,17 @@
     background-color: black;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    justify-items: map-get($estilos, centro);
 
     form{
         width: 80%;
         padding: 20px;
         margin-top: 3rem;
-        align-items: center;
-        justify-content: center;
+        align-items: map-get($estilos, centro);
+        justify-content: map-get($estilos, centro);
         h2{
             font-size: $fontmedia;
-            text-align: center;
+            text-align: map-get($estilos, centro);
             color: $color;
             margin-bottom: 3rem;
         }
@@ -26,13 +26,13 @@
         }
         div{
             width: 100%;
-            text-align: center;
+            text-align: map-get($estilos, centro);
         }
     }
 
     label{
         font-size: $fontbase+2;
-        text-align: center;
+        text-align: map-get($estilos, centro);
         color: white;
     }
     textarea{

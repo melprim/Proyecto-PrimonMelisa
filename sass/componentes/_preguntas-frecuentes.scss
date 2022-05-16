@@ -1,10 +1,8 @@
 .masPreguntas{
-    text-align: center;
+    @extend .estiloTituloSec;
     font-size: $fontmedia+5;
-    color: $color;
-    font-weight: 400;
     margin: 5rem 0 8rem;
-    font-family: 'Oswald', sans-serif;
+    
 
     span{
         color: rgb(139, 133, 126);
@@ -21,8 +19,8 @@
 
 .transform-4 {
     transition: all 0.5s ease;
-}
-.transform-4:hover {
-    cursor: pointer;
-    transform: scale(1.2);
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
 }

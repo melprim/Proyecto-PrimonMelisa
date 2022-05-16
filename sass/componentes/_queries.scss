@@ -40,7 +40,6 @@
             padding: 0 10px;
         }
     }
-    
 
     .seccionFinal{
         padding: 5rem 2rem;
@@ -61,6 +60,11 @@
         .img-producto{
             width: 300px;
         }
+        .texto-grid{
+            text-align: center;
+            margin: 2rem 0 3rem;
+            padding: 0 10px;
+        }
     }
     .instalacion{
         grid-auto-rows: auto; 
@@ -69,6 +73,11 @@
             width: 145px;
             max-height: 250px;
         }  
+        .texto-grid{
+            text-align: center;
+            margin: 2rem 0 3rem;
+            padding: 0 10px;
+        }
     } 
     .titulo--instalacion{
         margin-top: 3rem;
@@ -121,12 +130,12 @@
             grid-column: 1/-1;
             a{
                 font-size: $fontmedia;
-            }
-            a::before {
-                display: none;
-            }
-            a::after {
-                display: none;
+                &::before {
+                    display: none;
+                }
+                &::after {
+                    display: none;
+                }
             }
         }
     }

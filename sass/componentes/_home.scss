@@ -20,54 +20,51 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: map-get($estilos, centro);
+    align-items: map-get($estilos, centro);
+    text-align: map-get($estilos, centro);
     padding: 8rem 0;
 
     p{
         font-size: $fontbase+1;
         line-height: 2rem;
         color: black;
-        text-align: center;
+        text-align: map-get($estilos, centro);
         width: 60%;
     }
 
     a{
         height: auto;
         margin-top: 4rem;
-        background-color: #49474A;
+        background-color: $bshadow;
         color: white;
-        padding: 15px;
-        border-radius: 15px; 
+        padding: map-get($estilos, 15px);
+        border-radius: map-get($estilos, 15px); 
     }
 }
 
 .titulo_ppal{
-    font-family: 'Oswald', sans-serif;
-    font-size: $fontlarge;
-    color: $color;
-    font-weight: 600; 
+    @include titulos(0 0 2rem);
     padding: 0 15px; 
-    margin-bottom: 2rem;
 }
 
 .boton {
-    text-align: center;
+    text-align: map-get($estilos, centro);
     display: flex;
-    justify-content: center;
+    justify-content: map-get($estilos, centro);
 }
 
 .transform-2 {
     transition: all 0.5s ease;
+    &:hover {
+        cursor: pointer;
+        color: $bshadow;
+        background-color: white;
+        transform: scale(1.1);
+        border: 1px solid $bshadow;
+    }
 }
-.transform-2:hover {
-    cursor: pointer;
-    color: $bshadow;
-    background-color: white;
-    transform: scale(1.1);
-    border: 1px solid $bshadow;
-}
+
 
 
 
