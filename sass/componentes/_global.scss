@@ -8,6 +8,7 @@ body{
     font-family: 'Poppins', sans-serif;
     max-width: 100%;
     overflow-x: hidden;
+    font-size: $fontbase;
 }
 
 a{
@@ -30,7 +31,7 @@ ul {
     bottom: 10px;
     right: 10px;
     font-size: 50px;
-    color: #49474A;
+    color: $bshadow;
     padding: 10px;
     border-radius: 5px;
     display: inline-block;
@@ -40,7 +41,7 @@ ul {
     margin: 11rem 0 6rem; 
     text-align: center;
     font-family: 'Oswald', sans-serif;
-    font-size: 40px;
+    font-size: $fontlarge;
     color: $color;
     font-weight: 600;
 }

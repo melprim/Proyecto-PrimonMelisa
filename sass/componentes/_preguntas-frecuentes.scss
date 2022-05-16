@@ -1,6 +1,6 @@
 .masPreguntas{
     text-align: center;
-    font-size: 30px;
+    font-size: $fontmedia+5;
     color: $color;
     font-weight: 400;
     margin: 5rem 0 8rem;
@@ -15,7 +15,7 @@
 
 .fondo_boton{
     background-color: #e6e3df;
-    font-size: 18px;
+    font-size: $fontbase+2;
     border-radius: 10px;
 }
 

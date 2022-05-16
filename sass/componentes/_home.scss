@@ -26,7 +26,7 @@
     padding: 8rem 0;
 
     p{
-        font-size: 17px;
+        font-size: $fontbase+1;
         line-height: 2rem;
         color: black;
         text-align: center;
@@ -45,7 +45,7 @@
 
 .titulo_ppal{
     font-family: 'Oswald', sans-serif;
-    font-size: 40px;
+    font-size: $fontlarge;
     color: $color;
     font-weight: 600; 
     padding: 0 15px; 
@@ -63,10 +63,10 @@
 }
 .transform-2:hover {
     cursor: pointer;
-    color: #49474A;
+    color: $bshadow;
     background-color: white;
     transform: scale(1.1);
-    border: 1px solid #49474A;
+    border: 1px solid $bshadow;
 }
 
 

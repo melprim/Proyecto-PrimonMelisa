@@ -1,5 +1,5 @@
 .caracteristicas-subt{
-    font-size: 35px;
+    font-size: $fontlarge - 5;
     color: $color;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
@@ -14,16 +14,16 @@
     justify-items: center;
     h3{
         color: #000000;
-        font-size: 22px;
+        font-size: $fontmedia - 3;
         font-weight: bold;
+    }
+    .img-grid{
+        width: 400px;
+        box-shadow: 0px 2px 10px $bshadow;
+        border-radius: 15px;
     }
 }
 
-.img-grid{
-    width: 400px;
-    box-shadow: 0px 2px 10px $bshadow;
-    border-radius: 15px;
-}
 
 .boton2{
     margin-top: 2rem;

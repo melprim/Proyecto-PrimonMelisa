@@ -11,7 +11,7 @@
         align-items: center;
         justify-content: center;
         h2{
-            font-size: 25px;
+            font-size: $fontmedia;
             text-align: center;
             color: $color;
             margin-bottom: 3rem;
@@ -31,7 +31,7 @@
     }
 
     label{
-        font-size: 18px;
+        font-size: $fontbase+2;
         text-align: center;
         color: white;
     }
@@ -50,7 +50,6 @@
         font-weight: 600;
         width: 100px;
         height: 30px;
-        font-size: 16px;
         border-radius: 5px;
         border: none;
     }
@@ -59,7 +58,7 @@
         padding: 20px;
         margin-top: 3rem;
         h2{
-            font-size: 25px;
+            font-size: $fontmedia;
             color: $color;
 
         }
@@ -67,16 +66,16 @@
             line-height: 2rem;
             margin-bottom: 3rem;
             color: white;
-            font-size: 18px;
+            font-size:$fontbase+2;
             padding-right: 20px;
 
             span{
-                font-size: 22px;
+                font-size: $fontmedia - 3;
                 color: $color;
             }
         }
         a{
-            font-size: 22px;
+            font-size: $fontmedia - 3;
             color: $color;
         }
     }
