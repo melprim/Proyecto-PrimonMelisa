@@ -1,13 +1,9 @@
 
-// .texto-carrusel{
-//     display: flex;
-//     flex-direction: column;
-// }
 .carousel-caption{
     top: 50%;
     right: 5%;
     left: 5%;
-    font-weight: 100;
+    font-family: 'Poppins200';
     .text-principal{
         font-size: 50px;
         margin-bottom: 0rem;
@@ -31,7 +27,6 @@
     p{
         font-size: $fontbase+1;
         line-height: 2rem;
-        color: black;
         text-align: map-get($estilos, centro);
         width: 60%;
     }

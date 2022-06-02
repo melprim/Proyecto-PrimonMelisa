@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins400';
     max-width: 100%;
     overflow-x: hidden;
     font-size: $fontbase;
@@ -40,10 +40,9 @@ ul {
 @mixin titulos($margin) {
     margin: $margin; 
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald600';
     font-size: $fontlarge;
     color: $color;
-    font-weight: 600;
 }
 
 .titulo{
@@ -51,14 +50,13 @@ ul {
 }
 
 .estiloh3{
-    color: #000000;
     font-size: $fontmedia - 3;
-    font-weight: bold;
+    font-family: 'Poppins600';
 }
 
 .estiloTituloSec {
     color: $color;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald400';
     text-align: center;    
 }
 
